@@ -43,8 +43,8 @@ if [[ "$RUN_BUILD" = "build" ]]; then
         exit 1
     fi
 else
-		echo -e "\n*** Build was not requested, skipping ***"
-    docker pull vpendyala/deeplearning-docker
+		echo -e "\n*** Build was not requested, downloading ***"
+    docker pull vpendyala/deeplearning
 fi
 
 DOCKER_ENV="-e NOTEBOOK_MODE=lab"

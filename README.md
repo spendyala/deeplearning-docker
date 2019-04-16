@@ -54,6 +54,11 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
   run-notebook
   ```
   * For the first time it takes longer to download the docker and install and configure the container.
+- To build a docker from scratch and start using the following command.
+  ```
+  run-notebook --build
+  ```
+  * For the first time it takes longer to download the docker and install and configure the container.
 
 
 

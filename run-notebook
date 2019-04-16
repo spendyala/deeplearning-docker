@@ -6,7 +6,7 @@ SCRIPT_PATH=$(cd "$(dirname $0)"; pwd)
 cd $SCRIPT_PATH
 
 ML_IMAGE=${ML_IMAGE:-deeplearning}
-RUN_BUILD=${RUN_BUILD:-build}
+RUN_BUILD=${RUN_BUILD:-no}
 DOCKER_DS_DIFFS=${DOCKER_DS_DIFFS:-no_diffs}
 OPEN_BROWSER=${OPEN_BROWSER:-yes}
 NB_USER=${NB_USER:-spendyala}
@@ -15,8 +15,8 @@ for i
 do
     if [[ "$i" = "--no-browser" ]]; then
         OPEN_BROWSER=no
-    elif [[ "$i" = "--no-build" ]]; then
-        RUN_BUILD=no
+    elif [[ "$i" = "--build" ]]; then
+        RUN_BUILD=build
     fi
 done
 
@@ -44,6 +44,7 @@ if [[ "$RUN_BUILD" = "build" ]]; then
     fi
 else
 		echo -e "\n*** Build was not requested, skipping ***"
+    docker pull vpendyala/deeplearning-docker
 fi
 
 DOCKER_ENV="-e NOTEBOOK_MODE=lab"

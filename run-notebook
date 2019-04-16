@@ -45,6 +45,7 @@ if [[ "$RUN_BUILD" = "build" ]]; then
 else
 		echo -e "\n*** Build was not requested, downloading ***"
     docker pull vpendyala/deeplearning
+    ML_IMAGE="vpendyala/deeplearning"
 fi
 
 DOCKER_ENV="-e NOTEBOOK_MODE=lab"

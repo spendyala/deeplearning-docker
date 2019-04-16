@@ -40,7 +40,7 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
 
 # Adding python packages to the requirements.txt
 - Add to the file `docker/root/tmp/requirements.txt`
-- Please don't add the version so that it makes it
+- Please don't add the version so that it makes it easier for pip to pick the latest stable version.
 
 # Some of the docker commands
 | Info | command |

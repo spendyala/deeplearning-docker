@@ -51,9 +51,6 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
 | Remove images | `docker rmi <image>` |
 | SSH into running container | `docker exec -it <container_id_from_ps> /bin/sh` |
 
-- To sh
--
--
 
-
-# Credits to [Daniel Rapp](https://github.com/rappdw) his help made me to consolidate and compose this Dockerfile.
+# Credits to [Daniel Rapp](https://github.com/rappdw).
+Without his help and knowledge, this docker image might have taken more time to consolidate and compose this Dockerfile.

@@ -43,15 +43,18 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
 - Please don't add the version so that it makes it easier for pip to pick the latest stable version.
 
 # How to use this docker?
+- Open windows command prompt or Linux/Mac termrminal.
+- Run the following commands in terminal mode
 - Just clone the package with the following command
   ```
   git clone https://github.com/spendyala/deeplearning-docker.git
   ```
-- Run the command in terminal mode
+- It should open a browser with Jupyter Notebook.
   ```
   run-notebook
   ```
-  It should open a browser with Jupyter Notebook.
+  * For the first time it takes longer to download the docker and install and configure the container.
+
 
 
 # Some of the docker commands

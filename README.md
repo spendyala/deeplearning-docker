@@ -9,6 +9,8 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
 3) python - you may want to have Python3.7 [installed](https://www.python.org/downloads/), although this isn't required. You will want at least an introdctory level of understanding programming in python. (There are numerous sources that will get you up to speed programming python. Try a google search and select the one you fancy.)
 4) jupyter - should you elect to install python 3, you may also want to [install](http://jupyter.org/install) jupyter, although this is not required. We also recommend watching or reading through a tutorial to glean a basic understanding of Jupyter prior to participating in these sessions (again, google search...).
 
+## Python The Hardway
+* [Learn Python The Hard Way](https://learnpythonthehardway.org/python3/)
 
 # Other Resources for Understanding Machine Learning
 

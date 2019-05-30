@@ -1,7 +1,10 @@
+arrow
 bokeh
 credstash
 graphviz
+h5py
 holoviews
+image
 ipympl
 ipywidgets
 jupyter
@@ -12,10 +15,12 @@ numpy
 nxpd
 matplotlib
 pandas
+pillow
 plotly
 scipy
 scikit-learn
 seaborn
+sklearn
 sympy
 jupyter_contrib_nbextensions
 jupyter_nbextensions_configurator

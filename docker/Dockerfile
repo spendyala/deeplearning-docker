@@ -83,6 +83,13 @@ RUN apt-get update && apt-get install build-essential --allow-unauthenticated -y
 RUN apt-get install libpng-dev --allow-unauthenticated -y
 RUN apt-get install libfreetype6-dev --allow-unauthenticated -y
 RUN apt-get install libgomp1 --allow-unauthenticated -y
+RUN apt-get install libjpeg-dev --allow-unauthenticated -y
+RUN apt-get install libfreetype6-dev --allow-unauthenticated -y
+RUN apt-get install libfreetype6-dev --allow-unauthenticated -y
+RUN ln -s /usr/lib/i386-linux-gnu/libfreetype.so /usr/lib
+RUN ln -s /usr/lib/i386-linux-gnu/libjpeg.so /usr/lib
+RUN ln -s /usr/lib/i386-linux-gnu/libz.so /usr/lib
+
 
 COPY docker/root/tmp/requirements.txt /tmp/requirements.txt
 
@@ -135,10 +142,10 @@ RUN chown -R $NB_USER /home/$NB_USER/.jupyter; \
     groupmod -g 2005 node; \
     usermod -u 1000 $NB_USER
 
-RUN mkdir -p /home/$NB_USER/mnist; \
-    cd /home/$NB_USER/mnist; \
-    wget -q https://s3-us-west-2.amazonaws.com/resero2/datasets/tsne-perf-test/data.2500.mnist.dat.gz; \
-    gunzip *.gz
+# RUN mkdir -p /home/$NB_USER/mnist; \
+#     cd /home/$NB_USER/mnist; \
+#     wget -q https://s3-bucket-files; \
+#     gunzip *.gz
 
 RUN echo NOTEBOOK_USER=$NB_USER > /etc/environment
 CMD ["/usr/local/bin/start-notebook.sh"]

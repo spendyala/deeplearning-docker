@@ -72,7 +72,7 @@ This repository hold the notebooks, docker images, exercises, etc. for the Machi
 | Purging none images to clear space | `docker system prune -a` |
 | Remove images | `docker rmi <image>` |
 | SSH into running container | `docker exec -it <container_id_from_ps> /bin/sh` |
-| Push image | `docker tag docker tag deeplearning vpendyala/deeplearning:latest`|
+| Push image | `docker tag deeplearning vpendyala/deeplearning:latest`|
 
 
 ### Credits to [Daniel Rapp](https://github.com/rappdw).

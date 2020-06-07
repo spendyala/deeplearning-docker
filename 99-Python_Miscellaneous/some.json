@@ -1,0 +1,42 @@
+{
+  "id": 3300,
+  "data": {
+    "gender": "male",
+    "dept": ["enginerring", "techsupport", "devops"],
+    "name": {
+      "title": "monsieur",
+      "first": "adrien",
+      "last": "lambert"
+    },
+    "location": {
+      "street": "2520 rue barrier",
+      "city": "morges 2",
+      "state": "nidwalden",
+      "postcode": 9752
+    },
+    "email": "adrien.lambert@example.com",
+    "login": {
+      "username": "yellowgorilla717",
+      "user_info": {
+        "last_login_time": "2007-06-17 07:51:54",
+        "last_activity": "Checked profile",
+        "last_game": "Checked profile",
+        "state": "Arizona"
+      }
+    },
+    "dob": "1946-01-26 18:44:10",
+    "registered": "2007-05-17 07:51:54",
+    "phone": "(127)-093-1911",
+    "cell": "(867)-527-4578",
+    "id": {
+      "name": "AVS",
+      "value": "756.OUGI.JBUO.16"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/81.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
+    },
+    "nat": "CH"
+  }
+}
